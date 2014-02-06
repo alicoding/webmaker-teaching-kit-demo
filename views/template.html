@@ -4,7 +4,7 @@
     <div class="note-paper-side"></div>
     <div class="note-paper"></div>
     <div id="teachingkit-banner">
-      {{th}}
+      {{activity}}
     </div>
     <div id="header-img">
       <img alt="Header Image" height="180" src="https://stuff.webmaker.org/teach-assets/kits/images/icebreaker.png" width="180">
@@ -15,7 +15,7 @@
         <h2>{{description}} </h2>
       </hgroup>
       <div id="metadata">
-        <span id="made-by">Made by <a href="http://example.com" id="author">your name</a></span>
+        <span id="made-by">{{madeBy}}</a></span>
       </div>
     </div>
   </header>
@@ -24,28 +24,28 @@
     <div id="left-side">
 
       <section class="step-section">
-        <h1 class="big-green-title">Steps for the Activity</h1>
+        <h1 class="big-green-title">{{byGreenTitle}}</h1>
         <ol>
           <li>
           <p>
-         We believe that peer-to-peer activities are the most powerful way to facilitate interaction, build networks, and collaborate. Successful activities are:
+         {{paragraphOne}}
           </p>
           <div class="example-div">
             <ul>
-              <li><strong>Participatory:</strong> Engaging and activating participants from the beginning and getting them making and doing, rather than listening and watching.</li>
-              <li><strong>Purposeful:</strong> Working toward meaningful goals.
+              <li><strong>{{Participatory}}</strong>{{ParticipatoryDescription}} </li>
+              <li><strong>{{Purposeful}}</strong> {{PurposefulDescription}}
               </li>
-              <li><strong>Productive:</strong> Well-planned so that concrete outcomes are achieved in the allotted time, and participants feel time was well spent.</li>
+              <li><strong>{{Productive}}</strong> {{PructiveDescription}}</li>
             </ul>
           </div>
           </li>
 
           <li>
-          <p>Explain each step of the activity so that others can repeat it in their learning situations. Start by explaining how the activity is set up.</p>
+          <p>{{paragraphTwo}}</p>
           </li>
 
           <li>
-          <p>Be descriptive! Seeing an activity in action is very different than reading about it, so be as specific as you can.</p>
+          <p>{{paragraphThree}}</p>
           </li>
         </ol>
       </section>
@@ -54,29 +54,29 @@
 
     <div id="right-side">
       <section class="small-checkbox-section">
-        <h1><i class="icon-check-sign"></i> Materials</h1>
+        <h1><i class="icon-check-sign"></i> {{Materials}}</h1>
         <div>
           <ul>
-            <li><input id="r4" type="checkbox"><label for="r4"></label> Pens</li>
-            <li><input id="r5" type="checkbox"><label for="r5"></label> Post-its</li>
-            <li><input id="r4" type="checkbox"><label for="r4"></label> Computer</li>
-            <li><input id="r5" type="checkbox"><label for="r5"></label> Web Access</li>
+            <li><input id="r4" type="checkbox"><label for="r4"></label> {{Pens}}</li>
+            <li><input id="r5" type="checkbox"><label for="r5"></label> {{PostIts}}</li>
+            <li><input id="r4" type="checkbox"><label for="r4"></label> {{Computer}}</li>
+            <li><input id="r5" type="checkbox"><label for="r5"></label> {{WebAccess}}</li>
           </ul>
         </div>
       </section>
       <section class="attention-section">
-        <h1><i class="icon-comments"></i> Discussion</h1>
-        <div>What are the essential questions your learners should be able to discuss and reflect upon after this activity?
+        <h1><i class="icon-comments"></i> {{Discussion}}</h1>
+        <div>{{DiscussionDescription}}
         </div>
       </section>
       <section class="teach-list">
-        <h1>Related Activities</h1>
+        <h1>{{RelatedActivities}}</h1>
         <div>
           <ul>
 
-            <li><a href="http://foo.org/">You can include LINKS...</a></li>
-            <li><a href="http://foo.org/">...to related pages and helpful resources...</a></li>
-            <li><a href="http://foo.org/">...in this section</a></li>
+            <li><a href="http://foo.org/">{{IncludeLinks}}</a></li>
+            <li><a href="http://foo.org/">{{resource}}</a></li>
+            <li><a href="http://foo.org/">{{section}}</a></li>
           </ul>
         </div>
       </section>
