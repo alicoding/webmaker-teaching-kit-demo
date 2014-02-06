@@ -1,5 +1,6 @@
 {
-  "activity": "Name your activity",
+  "name": "Name your activity",
+  "activity": "Activity",
   "bigGreenTitle": "Steps for the Activity",
   "paragraphOne": "We believe that peer-to-peer activities are the most powerful way to facilitate interaction, build networks, and collaborate. Successful activities are:",
   "madeBy": "Made by <a href=\"http://example.com\" id=\"author\">your name",
