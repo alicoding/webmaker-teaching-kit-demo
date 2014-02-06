@@ -13,11 +13,14 @@
 
 <title>Activity Template</title>
 <script src="../javascripts/nunjucks.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
 <script>
-function startUp () {
-  nunjucks.env = new nunjucks.Environment(new nunjucks.WebLoader('./', true));
 
-  document.body.innerHTML = nunjucks.env.render('index-v2.html', { Activity: 'Blah blah' });
+function startUp () {
+  var loading = nunjucks.WebLoader.getSource('./locale/th.json');
+  console.log(loading);
+  nunjucks.env = new nunjucks.Environment(new nunjucks.WebLoader('./views', true));
+  document.body.innerHTML = nunjucks.env.render('template.html', { Activity: 'Blah blah' });
 
 }
 
