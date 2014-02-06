@@ -15,7 +15,7 @@
 <script src="../javascripts/nunjucks.js"></script>
 <script>
 
-nunjucks.env = new nunjucks.Environment(new nunjucks.HttpLoader('/views', true));
+nunjucks.env = new nunjucks.Environment(new nunjucks.WebLoader('/views', true));
 
 document.body.innerHTML = nunjucks.env.render('index-v2.html', { Activity: 'Blah blah' });
 
